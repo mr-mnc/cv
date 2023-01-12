@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Registration form</title>
+  </head>
+  <body>
+    <form  action="mailto:nikkiechan07@gmail.com" method="post"  enctype="text/plain">
+
+
+    <label>Name:</label>
+    <input type="text" name="Name:" value="" placeholder="Enter your name"><br><br>   <!--Using text input tag-->
+    <label>Registration number:</label>
+    <input type="number" name="Reg No" value="" placeholder="Enter your RegNo"><br><br> <!--Using number input tag-->
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="">Male <input type="radio" name="gender" value="">Female<br><br> <!--Using radio input tag . Need to use "id" here-->
+    <label>Date of birth:</label>
+    <input type="date" name="DOB" value=""><br><br>            <!--Using date input tag-->
+
+    <label>Subjects</label>                                    <!--Using checkbox input tag. Need to use "id" here -->
+    <input type="checkbox" name="subs" value="">subject1
+    <input type="checkbox" name="subs" value="">subject2
+    <input type="checkbox" name="subs" value="">subject3
+    <br><br>
+
+    <label>Branch</label>                                        <!--Creating a dropdown list using select-->
+    <select name="branch">
+      <option value="" disabled selected></option> <!-- this line shows a blank option -->
+      <optgroup label="UG" >  <!-- this creates a option group with the group name as UG .  Need to use "id" here-->
+        <option value="CSE">Computer Science Engineering</option>
+        <option value="ECE">Electronics Communication Engineering</option>
+        <option value="ME">Mechanical Engineering</option>
+        <option value="Other">Other</option>
+
+      </optgroup>
+
+      <optgroup label="PG" >  <!-- this creates a option group with the group name as PG-->
+        <option value="Msc Data Science">Msc Data Science</option>
+        <option value="Msc Electronics">Msc Electronics</option>
+        <option value="Msc Biotechnology">Msc Biotechnology</option>
+        <option value="Other">Other</option>
+
+      </optgroup>
+    </select>
+    <br><br>
+    <label>Address</label>
+    <textarea name="" rows="3" cols="20"placeholder="Enter your address"></textarea>  <!-- Need to use "id" here-->
+    <br><br>
+    <input type="submit" name="" value="Submit now">
+    <input type="reset" name="" value="Reset">
+
+
+    </form>
+
+  </body>
+</html>
+<!--Output:
+Name:=Maddi Nikhel Chandra Reddy
+Reg No=1222010303025
+gender=
+DOB=2002-04-29
+subs=
+branch=CSE-->
+
+
+<!--Check out the below code using "id"
+
+Output:
+Name=Nikhel Reddy
+RegNo=122010303025
+subjects=Subject 1
+subjects=Subject 2
+gender=male
+branch=CSE
+dob=2002-04-29
+address=lost in time-->
+
+
+<!--<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="mailto:nikkiechan07@gmail.com" method="post"  enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="roll">Roll Number:</label>
+      <input type="number" id="roll" name="roll"><br>
+
+      <label for="subjects">Subjects:</label>
+      <input type="checkbox" id="subject1" name="subjects" value="Subject 1"> Subject 1
+      <input type="checkbox" id="subject2" name="subjects" value="Subject 2"> Subject 2
+      <input type="checkbox" id="subject3" name="subjects" value="Subject 3"> Subject 3<br>
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male"> Male
+      <input type="radio" id="female" name="gender" value="female"> Female<br>
+
+      <label for="branch">Branch:</label>
+      <select id="branch" name="branch">
+        <option value="CSE">Computer Science and Engineering</option>
+        <option value="ECE">Electronics and Communication Engineering</option>
+        <option value="ME">Mechanical Engineering</option>
+      </select><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob"><br>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address"></textarea><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+
+
+
+  </body>
+</html>
+-->

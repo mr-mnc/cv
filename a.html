@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="mailto:nikkiechan07@gmail.com" method="post"  enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="Name"><br>
+
+      <label for="roll">Roll Number:</label>
+      <input type="number" id="roll" name="RegNo"><br>
+
+      <label for="subjects">Subjects:</label>
+      <input type="checkbox" id="subject1" name="subjects" value="Subject 1"> Subject 1
+      <input type="checkbox" id="subject2" name="subjects" value="Subject 2"> Subject 2
+      <input type="checkbox" id="subject3" name="subjects" value="Subject 3"> Subject 3<br>
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male"> Male
+      <input type="radio" id="female" name="gender" value="female"> Female<br>
+
+      <label for="branch">Branch:</label>
+      <select id="branch" name="branch">
+        <option value="CSE">Computer Science and Engineering</option>
+        <option value="ECE">Electronics and Communication Engineering</option>
+        <option value="ME">Mechanical Engineering</option>
+      </select><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob"><br>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address"></textarea><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+
+
+
+  </body>
+</html>
+
+
+<!--
+Output:
+
+Name=Nikhel Reddy
+RegNo=122010303025
+subjects=Subject 1
+subjects=Subject 2
+gender=male
+branch=CSE
+dob=2002-04-29
+address=lost in time-->
